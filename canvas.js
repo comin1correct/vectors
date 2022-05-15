@@ -13,7 +13,7 @@ function onClickEvent(event){
     coords = adjustCoordinates(event);
     vectors.push(coords);
     //connectCoordinates(event);
-    setTimeout(function() { primsMST() }, 100);
+    setTimeout(function() { primsMST() }, 10);
 }
 
 function connectCoordinates() {
@@ -88,8 +88,9 @@ function drawLines(x, y){
 
 function drawEllipse(x,y, color = 'black'){
     context.beginPath();
-    context.strokeStyle = color;
     context.fillStyle = color;
+
     context.ellipse(x, y, 5, 5, Math.PI, 0, 2 * Math.PI);
     context.fill(); 
+    context.stroke();
 }
