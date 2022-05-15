@@ -58,9 +58,13 @@ function primsMST(){
         reached.push(unreached[uIndex]);
         unreached.splice(uIndex,1);
     }
+    console.log(reached);
 
     for (let i = 0; i < vectors.length; i++) {
         drawEllipse(vectors[i].x, vectors[i].y, 'green');
+        context.fillStyle = 'black';
+        context.font = '18px sans-serif';
+        context.fillText(i, vectors[i].x -10, vectors[i].y -10);
     }   
 }
 
