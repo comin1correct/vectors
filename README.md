@@ -1,3 +1,3 @@
 # vectors - MST
 
-![Screen Shot 2022-05-15 at 5 51 26 PM](https://user-images.githubusercontent.com/17501941/168495342-f4af722f-0e31-4a0b-9f75-9cc86aecb2db.png)
+![Screen Shot 2022-05-15 at 7 58 39 PM](https://user-images.githubusercontent.com/17501941/168500077-39ba2498-8ee2-4dc8-8805-1915ed22554d.png)
