@@ -4,6 +4,7 @@ canvas.width = size;
 canvas.hieght = size;
 var vectors = [];
 var context = canvas.getContext("2d");
+context.font = '12px sans-serif';
 var x;
 var y;
 
@@ -56,14 +57,13 @@ function primsMST(){
         context.stroke();
 
         reached.push(unreached[uIndex]);
-        unreached.splice(uIndex,1);
+        unreached.splice(uIndex, 1);
     }
     console.log(reached);
 
     for (let i = 0; i < vectors.length; i++) {
         drawEllipse(vectors[i].x, vectors[i].y, 'green');
         context.fillStyle = 'white';
-        context.font = '12px sans-serif';
         context.fillText(i, vectors[i].x - 3 , vectors[i].y + 4);
     }   
 }
@@ -94,7 +94,7 @@ function drawEllipse(x,y, color = 'black'){
     context.beginPath();
     context.fillStyle = color;
 
-    context.ellipse(x, y, 6, 6, Math.PI, 0, 2 * Math.PI);
+    context.ellipse(x, y, 10, 10, Math.PI, 0, 2 * Math.PI);
     context.fill(); 
     context.stroke();
 }
