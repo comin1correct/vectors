@@ -1,5 +1,5 @@
 const size = 300;
-const canvas = document.getElementById("myCanvas");
+const canvas = document.getElementById("canvas")
 canvas.width = size;
 canvas.hieght = size;
 var vectors = [];
@@ -62,9 +62,9 @@ function primsMST(){
 
     for (let i = 0; i < vectors.length; i++) {
         drawEllipse(vectors[i].x, vectors[i].y, 'green');
-        context.fillStyle = 'black';
-        context.font = '18px sans-serif';
-        context.fillText(i, vectors[i].x -10, vectors[i].y -10);
+        context.fillStyle = 'white';
+        context.font = '12px sans-serif';
+        context.fillText(i, vectors[i].x - 3 , vectors[i].y + 4);
     }   
 }
 
@@ -94,7 +94,7 @@ function drawEllipse(x,y, color = 'black'){
     context.beginPath();
     context.fillStyle = color;
 
-    context.ellipse(x, y, 5, 5, Math.PI, 0, 2 * Math.PI);
+    context.ellipse(x, y, 6, 6, Math.PI, 0, 2 * Math.PI);
     context.fill(); 
     context.stroke();
 }
